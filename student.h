@@ -21,17 +21,15 @@ class Student
         std::string getLastName() const;
         int getStudentID() const;
         int getGrades() const;
+        int getGradeCount() const;
 
         //setters
         void setFirstName(const std::string &fName);
         void setLastName(const std::string &lName);
         void setStudentID(int ID);
 
-        //returns the number of grades
-        int getGradeCount() const;
-
         //adds a new grade
-        void addGrade(int grade);
+        void addGrade(int newGrade);
 
         //calculates the grade average
         double calculateGradeAverage() const;
